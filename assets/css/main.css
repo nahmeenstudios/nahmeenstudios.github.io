@@ -207,9 +207,19 @@ a:after {
 }
 
 
+.aboutIcon {
+	font-size: 40px;
+	color: white;
+}
+
+
 .storeIcon i {
 	font-size: 50px;
 	color: #4e4e4e;
+}
+
+.storeIcon a {
+	padding: 30px;
 }
 
 .storeIcon .col-md-3:hover {
