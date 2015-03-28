@@ -2,9 +2,7 @@ $(document).ready(function(){
 	$('a .thumbnail').on('click',function(){
 		var src = $(this).attr('src');
 		var img = '<img src="' + src + '" class="img-responsive"/>';
-		
-		//start of new code new code
-		var index = $(this).parent('li').index();   
+		console.log(img)
 		
 		var html = '';
 		html += img;                
