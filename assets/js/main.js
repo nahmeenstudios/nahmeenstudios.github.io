@@ -1,7 +1,8 @@
 $(document).ready(function(){        
-	$('a .thumbnail').on('click',function(){
-		var src = $(this).attr('src');
-		var img = '<img src="' + src + '" class="img-responsive"/>';
+	$('a.thumbnail').on('click',function(event){
+		event.preventDefault();
+		var href = $(this).attr('href');
+		var img = '<img src="' + href + '" class="img-responsive"/>';
 		console.log(img)
 		
 		var html = '';
