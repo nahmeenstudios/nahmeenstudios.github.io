@@ -1,4 +1,5 @@
-$(document).ready(function(){        
+$(document).ready(function(){  
+
 	$('a.thumbnail').on('click',function(event){
 		event.preventDefault();
 		var href = $(this).attr('href');
@@ -18,4 +19,16 @@ $(document).ready(function(){
 		
 		
    });	
+
+
+   $('a[href^="#"]').click(function(){
+   		$("html, body").animate({
+   			scrollTop: $( $(this).attr("href") ).offset().top + 100 
+   		},500);
+   		return false
+   });
+
+
+
+
 })
